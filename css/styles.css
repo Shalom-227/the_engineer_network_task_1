@@ -123,3 +123,27 @@ h1 {
         border-radius: 2%;
     }
 }
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 5rem;
+    margin-bottom: var(--margin-bottom-lg) ;
+    
+    .bio-img {
+        max-width: 45%;
+        width: 100%;
+        
+    }
+    .bio-info { 
+        font-size: var(--font-size-md);
+        padding: 0 6.5rem; 
+     
+
+
+    }
+}
