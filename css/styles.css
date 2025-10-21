@@ -59,12 +59,15 @@ Shade: #585366
 --font-weight-medium:550;
 --font-weight-heavy: 700;
 
+--body-font-color: #313435;
+
 --nav-background-color: #DCD0FF;
 --nav-border: 0.5px solid #f5f1ff;
 --link-primary-color: #800020;
 --link-secondary-color: #26000a;
 --link-background-color: #f5f1ff;
 
+--margin-bottom-sm: 2rem;
 --margin-bottom-sm: 5rem;
 --margin-bottom-md:10rem;
 --margin-bottom-lg: 20rem;
@@ -78,7 +81,7 @@ body {
     font-family: Roboto;
     max-width: 1200px;
     margin: 0 auto;
-    color: #313435;
+    color: var(--body-font-color);
 
 }
 
@@ -142,8 +145,59 @@ h1 {
     .bio-info { 
         font-size: var(--font-size-md);
         padding: 0 6.5rem; 
-     
-
-
     }
 }
+
+h2 {
+    font-size: var(--font-size-lg);
+    text-align: center;
+     margin-bottom: var(--margin-bottom-sm) ;
+}
+
+.interests-list{
+    font-size: var(--font-size-md);
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 34rem 34rem;
+
+    li {
+        list-style: none;
+    }
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-background-color);
+    font-size: var(--font-size-xsm);
+    justify-content: center;
+    align-items: center;
+    border: var(--nav-border);
+    max-height: 30vh;
+    position: relative;
+    gap: 2rem;
+    color: var(--body-font-color);
+    padding-bottom: 4rem;
+}
+
+.footer-links li, a{
+    list-style: none;
+    text-decoration: none;        
+    color: var(--link-primary-color);
+    font-weight: var(--font-weight-light);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+
+}
+
+
+
