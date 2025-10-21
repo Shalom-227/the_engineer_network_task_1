@@ -21,7 +21,7 @@ Roboto
 PRIMARY
 Base: #800020 (Red Devil)
 Tint: #e6ccd2
-Shade: #26000a
+Shade: #4d0013
 
 GRAY
 Base: #a4adb0 (Gray Chateau)
@@ -64,8 +64,10 @@ Shade: #585366
 --nav-background-color: #DCD0FF;
 --nav-border: 0.5px solid #f5f1ff;
 --link-primary-color: #800020;
---link-secondary-color: #26000a;
+--link-color-hover: #4d0013;
 --link-background-color: #f5f1ff;
+
+--shadow-color: #f5f1ff;
 
 --margin-bottom-sm: 2rem;
 --margin-bottom-sm: 5rem;
@@ -98,20 +100,28 @@ body {
 .nav-bar {
     display: flex;
     background-color: var(--nav-background-color);
-    font-size: var(--font-size-xsm);
+    font-size: var(--font-size-sm);
     justify-content: space-around;
     align-items: center;
     border: var(--nav-border);
     max-height: 30vh;
     position: relative;
     margin-bottom: var(--margin-bottom-md);
+    
     li, a {
         display: block;
         list-style: none;
         text-decoration: none;
         color: var(--link-primary-color);
         font-weight: var(--font-weight-light);
+        transition: transform 0.7s ease-in-out;
     }
+}
+
+.nav-bar a:hover {
+    color: var(--link-color-hover);
+    transform: scale(1.1, 1);
+    
 }
 
 h1 {
@@ -140,11 +150,13 @@ h1 {
     .bio-img {
         max-width: 45%;
         width: 100%;
+        border: solid 0.5rem var(--nav-background-color);
         
     }
     .bio-info { 
         font-size: var(--font-size-md);
         padding: 0 6.5rem; 
+        border: solid 0.5rem var(--nav-background-color);
     }
 }
 
@@ -156,13 +168,14 @@ h2 {
 
 .interests{
     font-size: var(--font-size-md);
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 34rem 34rem;
+    grid-template-columns: 30rem 30rem 30rem;
     gap: 3rem;
     justify-content: center;
-    margin-bottom: var(--margin-bottom-sm);
+    margin-bottom: var(--margin-bottom-lg);
+    
 }
 
 .interests-list {
@@ -170,11 +183,12 @@ h2 {
     align-items: stretch;
     justify-self: center;
     list-style: none;
-    min-height: 40rem;
+    box-shadow: 1rem -2rem 3rem #DCD0FF;
+
 }
 
 .interests-list .interest-img {
-        max-width: 30rem;
+        max-width: 300px;
         width: 100%;
         /* justify-self: center; */
 }
@@ -186,30 +200,39 @@ h2 {
 .grid-control {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+     max-width: 30rem;
+    .interest-img{
+        align-self: stretch;
+    }
     .interest-text {
         display: flex;
         text-align: center;
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
 }
 
 .grid-control-2{
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
-    align-items: center;
+    /* padding-left: 2rem; */
+    max-width: 30rem;
+    align-items: stretch;
     .interest-text {
         display: flex;
         text-align: center;
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
+}
+
+.interests-list:hover {
+    transform: scale(1.05, 1);
 }
 .footer-nav {
     display: flex;
     flex-direction: column;
     background-color: var(--nav-background-color);
-    font-size: var(--font-size-xsm);
+    font-size: var(--font-size-sm);
     justify-content: center;
     align-items: center;
     border: var(--nav-border);
@@ -221,10 +244,12 @@ h2 {
 }
 
 .footer-links li, a{
+    display: flex;
     list-style: none;
     text-decoration: none;        
     color: var(--link-primary-color);
     font-weight: var(--font-weight-light);
+    transition: transform 0.7s ease-in-out;
 }
 
 .footer-links {
@@ -234,7 +259,11 @@ h2 {
     align-items: center;
     gap: 3rem;
     margin-top: 1rem;
+}
 
+.footer-links a:hover {
+    color: var(--link-color-hover);
+    transform: scale(1.1, 1);
 }
 
 
