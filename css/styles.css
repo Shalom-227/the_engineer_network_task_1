@@ -154,19 +154,44 @@ h2 {
      margin-bottom: var(--margin-bottom-sm) ;
 }
 
-.interests-list{
+.interests{
     font-size: var(--font-size-md);
     max-width: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 34rem 34rem;
-
-    li {
-        list-style: none;
-    }
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: var(--margin-bottom-sm);
 }
 
+.interests-list {
+    display: grid;
+    align-items: stretch;
+    justify-self: center;
+    list-style: none;
+    min-height: 40rem;
+}
 
+.interests-list .interest-img {
+        max-width: 30rem;
+        width: 100%;
+        /* justify-self: center; */
+}
+.interests-list .interest-text{
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .interest-text {
+        display: flex;
+        text-align: center;
+    }
+}
 .footer-nav {
     display: flex;
     flex-direction: column;
