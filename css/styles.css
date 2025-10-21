@@ -1,5 +1,109 @@
+/*
+
+------------------ TYPOGRAPHY ----------------
+FONT SIZES
+scaling factor = 1.25
+1rem (base)/ 1.25rem / 1.56rem / 1.90rem / 2.44rem /  3.05rem / 3.82rem / 4.8rem/ 6rem / 7.5rem /
+
+FONT WEIGHT
+400/900
+
+LINE HEIGHT
+1.2/1.5
+
+LETTER SPACING
+0 / -1.90rem
+
+FONT FAMILY
+Roboto
+
+-------------------COLOURS--------------------
+PRIMARY
+Base: #800020 (Red Devil)
+Tint: #e6ccd2
+Shade: #26000a
+
+GRAY
+Base: #a4adb0 (Gray Chateau)
+Tint: #edefef
+Shade: #313435
+
+SECONDARY;
+Base: #DCD0FF (Fog)
+Tint: #f5f1ff
+Shade: #585366
+
+
+
+
+*/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+--font-size-xxsm: 1.25rem;
+--font-size-xsm: 1.56rem;
+--font-size-sm: 1.90rem;
+--font-size-md: 2.44rem;
+--font-size-lg: 3.82rem;
+--font-size-xlg: 4.8rem;
+--font-size-xxlg: 6rem;
+--font-size-xxxlg: 7.5rem;
+
+--font-weight-light: 400;
+--font-weight-medium:550;
+--font-weight-heavy: 700;
+
+--nav-background-color: #DCD0FF;
+--nav-border: 0.5px solid #f5f1ff;
+--link-primary-color: #800020;
+--link-secondary-color: #26000a;
+--link-background-color: #f5f1ff;
+}
+
+html {
+    font-size: 62.5%;  /* custom font-size now 10px at 1rem */
+}
+
+body {
+    font-family: Roboto;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #313435;
+
+}
+
+.nav-logo img{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5%;
+    margin-bottom: 0;
+    max-height: 100%;
+
+}
+
+.nav-bar {
+    display: flex;
+    background-color: var(--nav-background-color);
+    font-size: var(--font-size-xsm);
+    justify-content: space-around;
+    align-items: center;
+    border: var(--nav-border);
+    max-height: 30vh;
+    position: relative;
+    li, a {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        color: var(--link-primary-color);
+        font-weight: var(--font-weight-light);
+        
+        
+    }
 }
