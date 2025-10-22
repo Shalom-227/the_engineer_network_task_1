@@ -49,7 +49,7 @@ Shade: #585366
 --font-size-xxsm: 1.25rem;
 --font-size-xsm: 1.56rem;
 --font-size-sm: 1.90rem;
---font-size-md: 2.44rem;
+--font-size-md: 3.05rem;
 --font-size-lg: 3.82rem;
 --font-size-xlg: 4.8rem;
 --font-size-xxlg: 6rem;
@@ -81,7 +81,7 @@ html {
 
 body {
     font-family: Roboto;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     color: var(--body-font-color);
     padding: 0 1rem;
@@ -101,7 +101,7 @@ body {
 .nav-bar {
     display: flex;
     background-color: var(--nav-background-color);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     justify-content: space-around;
     align-items: center;
     border: var(--nav-border);
@@ -143,7 +143,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     gap: 5rem;
     margin-bottom: var(--margin-bottom-lg) ;
@@ -169,63 +169,37 @@ h2 {
 
 .interests{
     font-size: var(--font-size-md);
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30rem 30rem 30rem;
+    grid-template-columns: repeat(4, 25rem);
     gap: 3rem;
     justify-content: center;
     margin-bottom: var(--margin-bottom-lg);
-    
 }
 
 .interests-list {
-    display: grid;
-    align-items: stretch;
-    justify-self: center;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 34.72rem; /* fixed height by tallest flex item */
     box-shadow: 1rem -2rem 3rem #DCD0FF;
-
+    transition: transform 2s ease-in-out;
 }
 
 .interests-list .interest-img {
-        max-width: 300px;
-        width: 100%;
-        /* justify-self: center; */
+        width: 80%;
+        margin: 0 auto;
+               
 }
 .interests-list .interest-text{
-    justify-self: center;
-    align-self: center;
+   margin: 0 auto;
+   padding-top: 3rem;
+    
 }
 
-.grid-control {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-     max-width: 30rem;
-    .interest-img{
-        align-self: stretch;
-    }
-    .interest-text {
-        display: flex;
-        text-align: center;
-        /* padding-top: 2rem; */
-    }
+.interest-extra-padding .interest-text{
+    text-align: center;
 }
-
-.grid-control-2{
-    display: flex;
-    flex-direction: column;
-    /* padding-left: 2rem; */
-    max-width: 30rem;
-    align-items: stretch;
-    .interest-text {
-        display: flex;
-        text-align: center;
-        /* padding-top: 2rem; */
-    }
-}
-
 .interests-list:hover {
     transform: scale(1.05, 1);
 }
@@ -233,7 +207,7 @@ h2 {
     display: flex;
     flex-direction: column;
     background-color: var(--nav-background-color);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     justify-content: center;
     align-items: center;
     border: var(--nav-border);
