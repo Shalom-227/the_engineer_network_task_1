@@ -1,136 +1,64 @@
-@media(max-width: 62.5rem){ /* 1000px / 16px = 62.5*/
+
+@media(max-width: 70.5rem){ /* 1128px / 16px = 70.5 */
     
     html {
-        font-size: 60%;  /* 55/100 x 16 = 9.6px*/  
+        font-size: 60%;  /* 60/100 x 16 = 9.6px*/  
     }
-    
     .interests{
-        font-size: var(--font-size-md);
-        max-width: 1000px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 45rem 45rem;
-        gap: 2rem;
+        grid-template-columns: repeat(3, 27rem);
+        grid-row-gap: 8rem;
         justify-content: center;
-        margin-bottom: var(--margin-bottom-md);
-}
-    .grid-control {
-        display: flex;
-        flex-direction: column;
-        max-width: 35rem;
-        .interest-img{
-            align-self: stretch;
-        }
-        .interest-text {
-            display: flex;
-            text-align: center;
-        }
-    }
-    .grid-control-2{
-            display: flex;
-            flex-direction: column;
-            max-width: 35rem;
-            align-items: stretch;
-            .interest-text {
-                display: flex;
-                text-align: center;
-            }
     }
 
-
-
+    .interests-list:hover {
+        transform: scale(1.07, 1);
+    } 
 }
 
-@media(max-width: 43.2rem){ /* 691px / 16px = 43.2*/
-
-
+@media(max-width: 52.6rem){ /* 842px / 16px = 52.6 */
+    
     html {
-        font-size: 55%;  /* 40/100 x 16 = 8.8px*/  
+        font-size: 52%;  /* 52/100 x 16 = 8.3px*/  
     }
     .interests{
-    font-size: var(--font-size-md);
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 40rem 40rem;
-    grid-column-gap: 5rem;
-    justify-content: center;
-    margin-bottom: var(--margin-bottom-md); 
-}
-.grid-control {
-    display: flex;
-    flex-direction: column;
-    max-width: 40rem;
-    .interest-img{
-        align-self: stretch;
-    }
-    .interest {   
-            display: flex;
-            flex-direction: column;
-            max-width: 40rem;
-            align-items: stretch;
-                .interest-text {
-                    display: flex;
-                    text-align: center;
-                }
-            }
-        }
-.grid-control-2{
-            display: flex;
-            flex-direction: column;
-            max-width: 40rem;
-            align-items: stretch;
-            .interest-text {
-                display: flex;
-                text-align: center;
-            }
+        grid-template-columns: repeat(2, 35rem);
+        gap: 7rem;
+        justify-content: center;
     }
 
+    .interests-list:hover {
+        transform: scale(1.07, 1);
+    } 
 }
 
-@media(max-width: 35rem){ /* 560px / 16px = 37.5 */
-
-
+@media(max-width: 41.1rem){ /* 658px / 16px = 41.1 */
+    
     html {
-        font-size: 50%;  /* 50/100 x 16 = 8px */  
+        font-size: 35%;  /* 45/100 x 16 = 7.2px*/  
     }
     .interests{
-    font-size: var(--font-size-md);
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50rem ;
-    grid-row-gap: 8rem;
-    justify-content: center;
-    margin-bottom: var(--margin-bottom-md); 
-}
-.grid-control {
-    display: flex;
-    flex-direction: column;
-    max-width: 37rem;
-    .interest-img{
-        align-self: stretch;
-    }
-    .interest {   
-            display: flex;
-            flex-direction: column;
-            max-width: 37rem;
-            align-items: stretch;
-                .interest-text {
-                    display: flex;
-                    text-align: center;
-                }
-            }
-        }
-.grid-control-2{
-            display: flex;
-            flex-direction: column;
-            max-width: 37rem;
-            align-items: stretch;
-            .interest-text {
-                display: flex;
-                text-align: center;
-            }
+        grid-template-columns: 30rem;
+        gap: 18rem;
+        justify-content: center;
     }
 
+    .interests-list:hover {
+        transform: scale(1.07, 1);
+    } 
+}
+
+@media(max-width: 23.8rem){ /* 381px / 16px = 23.8 */
+    
+    html {
+        font-size: 38%;  /* 38/100 x 16 = 6.1px*/  
+    }
+    .interests{
+        grid-template-columns: 30rem;
+        gap: 18rem;
+        justify-content: center;
+    }
+
+    .interests-list:hover {
+        transform: scale(1.07, 1);
+    } 
 }
