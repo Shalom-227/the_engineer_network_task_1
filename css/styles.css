@@ -155,8 +155,10 @@ h1 {
         
     }
     .bio-info { 
+        display: inline-block;
         font-size: var(--font-size-md);
-        padding: 0 6.5rem; 
+        padding: 0 1rem; 
+        text-align: center;
         border: solid 0.5rem var(--nav-background-color);
     }
 }
