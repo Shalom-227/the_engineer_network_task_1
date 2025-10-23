@@ -40,6 +40,9 @@
     html {
         font-size: 35%;  /* 45/100 x 16 = 7.2px*/  
     }
+    /* .nav-bar {
+        margin-bottom: var(--margin-bottom-lg);
+    } */
     .bio .bio-info {
         display: block;
         text-align: justify;
@@ -61,6 +64,9 @@
     
     html {
         font-size: 38%;  /* 38/100 x 16 = 6.1px*/  
+    }
+    .nav-bar {
+        margin-bottom: var(--margin-bottom-mdx);
     }
     .bio .bio-info {
         display: block;
