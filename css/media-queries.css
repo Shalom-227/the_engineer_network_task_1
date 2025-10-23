@@ -4,6 +4,10 @@
     html {
         font-size: 60%;  /* 60/100 x 16 = 9.6px*/  
     }
+    .bio .bio-info {
+        display: block;
+        padding: 4rem 2rem;
+    }
     .interests{
         grid-template-columns: repeat(3, 27rem);
         grid-row-gap: 8rem;
@@ -36,6 +40,12 @@
     html {
         font-size: 35%;  /* 45/100 x 16 = 7.2px*/  
     }
+    .bio .bio-info {
+        display: block;
+        text-align: justify;
+        padding: 2rem 1rem;
+        word-spacing: -1.2px;
+    }
     .interests{
         grid-template-columns: 30rem;
         gap: 18rem;
@@ -51,6 +61,13 @@
     
     html {
         font-size: 38%;  /* 38/100 x 16 = 6.1px*/  
+    }
+    .bio .bio-info {
+        display: block;
+        text-align: justify;
+        padding: 2rem 1rem;
+        word-spacing: -1.2px;
+
     }
     .interests{
         grid-template-columns: 30rem;

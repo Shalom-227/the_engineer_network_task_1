@@ -14,6 +14,9 @@ LINE HEIGHT
 LETTER SPACING
 0 / -1.90rem
 
+WORD SPACING
+0/ -1.2px
+
 FONT FAMILY
 Roboto
 
@@ -28,7 +31,7 @@ Base: #a4adb0 (Gray Chateau)
 Tint: #edefef
 Shade: #313435
 
-SECONDARY;
+SECONDARY
 Base: #DCD0FF (Fog)
 Tint: #f5f1ff
 Shade: #585366
@@ -73,6 +76,8 @@ Shade: #585366
 --margin-bottom-sm: 5rem;
 --margin-bottom-md:10rem;
 --margin-bottom-lg: 20rem;
+
+--paragraph-line-height: 1.7;
 }
 
 html {
@@ -90,8 +95,8 @@ body {
 
 .nav-logo img{
     display: block;
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 5%;
     margin-bottom: 0;
     max-height: 100%;
@@ -108,6 +113,7 @@ body {
     max-height: 30vh;
     position: relative;
     margin-bottom: var(--margin-bottom-md);
+    padding: 2.3rem;
     
     li, a {
         display: block;
@@ -151,15 +157,16 @@ h1 {
     .bio-img {
         max-width: 45%;
         width: 100%;
-        border: solid 0.5rem var(--nav-background-color);
+        border: solid 1.5rem var(--nav-background-color);
         
     }
     .bio-info { 
         display: inline-block;
         font-size: var(--font-size-md);
-        padding: 0 1rem; 
+        padding: 1rem 1rem; 
         text-align: center;
         border: solid 0.5rem var(--nav-background-color);
+        line-height: var(--paragraph-line-height);
     }
 }
 
